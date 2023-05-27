@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/dark_gray"
+    android:layout_height="wrap_content"
+    android:id="@+id/constraint"
+    tools:context=".memwor.settings.Settings">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/cardView"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/dark_gray"
+            app:cardCornerRadius="26dp"
+            tools:ignore="MissingConstraints">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+<!--                <Button-->
+<!--                    android:layout_width="24dp"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:layout_gravity="right"-->
+<!--                    android:stateListAnimator="@null"-->
+<!--                    android:background="@drawable/ic_close_black_24dp"-->
+<!--                    android:id="@+id/close_"/>-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Настройки"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Выберите категории, на основе которых будет создаваться ваша лента"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <CheckBox
+                            android:id="@+id/memes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:textColor="@android:color/white"
+                            android:checked="true"
+                            android:text="Мемы" />
+                        <CheckBox
+                            android:id="@+id/news"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:textColor="@android:color/white"
+                            android:checked="true"
+                            android:text="Новости" />
+                        <CheckBox
+                            android:id="@+id/games"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:textColor="@android:color/white"
+                            android:checked="true"
+                            android:text="Игры" />
+                        <CheckBox
+                            android:id="@+id/films"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:textColor="@android:color/white"
+                            android:checked="true"
+                            android:text="Фильмы" />
+                        <CheckBox
+                            android:id="@+id/meal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:textColor="@android:color/white"
+                            android:checked="true"
+                            android:text="Еда" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:enabled="true"
+                        android:orientation="vertical">
+                        <CheckBox
+                            android:id="@+id/books"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:textColor="@android:color/white"
+                            android:checked="true"
+                            android:text="Книги" />
+                        <CheckBox
+                            android:id="@+id/animals"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:textColor="@android:color/white"
+                            android:checked="true"
+                            android:text="Животные" />
+                        <CheckBox
+                            android:id="@+id/gardening"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:textColor="@android:color/white"
+                            android:checked="true"
+                            android:text="Садоводство" />
+                        <CheckBox
+                            android:id="@+id/psychology"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:textColor="@android:color/white"
+                            android:checked="true"
+                            android:text="Психология" />
+                        <CheckBox
+                            android:id="@+id/sciences"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:textColor="@android:color/white"
+                            android:checked="true"
+                            android:text="Науки" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/cartoons"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:textColor="@android:color/white"
+                            android:checked="true"
+                            android:text="Мультфильмы" />
+                        <CheckBox
+                            android:id="@+id/perfumery"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:textColor="@android:color/white"
+                            android:checked="true"
+                            android:text="Парфюмерия" />
+                        <CheckBox
+                            android:id="@+id/clothes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:textColor="@android:color/white"
+                            android:checked="true"
+                            android:text="Одежда" />
+                        <CheckBox
+                            android:id="@+id/household_items"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:textColor="@android:color/white"
+                            android:checked="true"
+                            android:text="Хозяйственные вещи" />
+                        <CheckBox
+                            android:id="@+id/chancellery"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/white"
+                            android:textColor="@android:color/white"
+                            android:checked="true"
+                            android:text="Канцелярия" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <FrameLayout
+                    android:id="@+id/settings_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <!-- вложенные view в FrameLayout, например, ImageView -->
+
+                </FrameLayout>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="NotSibling">
+
+                    <ImageView
+                        android:id="@+id/gear1"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="-35dp"
+                        android:src="@drawable/gear1_image"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                    <ImageView
+                        android:id="@+id/gear2"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/gear2_image"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/anim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@drawable/off"
+            app:backgroundTint="@color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@android:drawable/ic_dialog_map"
+            app:backgroundTint="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/tape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@android:drawable/ic_dialog_info"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@id/fab"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/database"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@android:drawable/ic_dialog_email"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@id/tape"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/browser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@drawable/browser_logo"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@id/database"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/walkingMan"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/animation_walking"
+        tools:ignore="MissingConstraints" />
+    <ImageView
+        android:id="@+id/walking2Man"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/animation_walking2"
+        tools:ignore="MissingConstraints" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_memwor"
+            android:icon="@drawable/memwor_logo"
+            android:title="@string/memwor" />
+        <item
+            android:id="@+id/nav_browser"
+            android:icon="@drawable/browser_logo"
+            android:title="@string/browser" />
+        <item
+            android:id="@+id/nav_pumpwimo"
+            android:icon="@drawable/logo_inscrition"
+            android:title="@string/pumpwimo" />
+        <item
+            android:id="@+id/nav_pizza_planet"
+            android:icon="@drawable/pizza_icon"
+            android:title="@string/pizzaplanet" />
+        <!--TODO Добавить другие элементы меню сюда -->
+    </group>
+</menu>
